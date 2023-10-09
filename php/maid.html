@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maid Registration Form</title>
+  <meta charset="UTF-8">
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    .registration-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="registration-form">
+      <h2 class="text-center text-primary mb-4">Maid Registration Form</h2>
+      <form action="http://localhost/Maid-Services-Web-developement-project-main/Maid-Services-Web-developement-project-main/php/maidregister.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" class="form-control" id="full-name" name="full-name" required placeholder="तुमचं पूर्ण नाव">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone No:</label>
+          <input type="text" class="form-control" id="phone" name="phone" required placeholder="तुमचा फोन नंबर">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea class="form-control" id="address" name="address" rows="4" required placeholder="तुमचा पत्ता"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="photo">Upload Photo:</label>
+          <input type="file" class="form-control-file" id="photo" name="photo" accept=".jpg, .jpeg, .png" value="">
+         </div>
+        <div class="form-group">
+          <label for="experience">Experience:</label>
+          <textarea class="form-control" id="experience" name="experience" rows="4" required placeholder="तुमचं कामाचं अनुभव"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills:</label>
+          <textarea class="form-control" id="skills" name="skills" rows="4" required placeholder="तुमचं कौशल्ये आणि क्षमता"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="availability">Availability:</label>
+          <input type="text" class="form-control" id="availability" name="availability" required placeholder="उपलब्धता">
+        </div>
+        <div class="form-group">
+          <label for="language-preference">Language Preference:</label>
+          <input type="text" class="form-control" id="language-preference" name="language-preference" placeholder="तुमचं भाषा प्राधान्य">
+        </div>
+        <div class="form-group">
+          <label for="salary-expectation">Salary Expectation:</label>
+          <input type="text" class="form-control" id="salary-expectation" name="salary-expectation" placeholder="तुमचं वेतन अपेक्षा (प्रति महिना)">
+        </div>
+        <div class="form-group">
+          <label for="background-check">Background Check:</label>
+          <input type="checkbox" id="background-check" name="background-check">
+        </div>
+        <div class="form-group">
+          <label for="additional-preferences">Additional Preference:</label>
+          <textarea class="form-control" id="additional-preferences" name="additional-preferences" rows="4" placeholder="तुमचं इतर प्राधान्य"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-4">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Link to Bootstrap JS and jQuery (required for some Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
